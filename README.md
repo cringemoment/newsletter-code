@@ -9,6 +9,7 @@ Here's some examples
 *pcpbs.txt*
 
 cringemoment 326 0
+
 some_noob 2 1
 
 
@@ -17,6 +18,7 @@ The first argument is the username, the second is the amount, the third is what 
 *ppbultra.txt*
 
 cringemoment 476 0 @140
+
 jimothyjimothy 2 0 @175
 
 The first argument is the username, the second is the amount, the third is what game (0 = Jstris, 1 = TETR.IO), the fourth is the piece count
