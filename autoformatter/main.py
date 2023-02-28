@@ -91,13 +91,40 @@ for i in runvalues:
 longestlength = 0
 longestpblength = 0
 
-for i in range(5):
-    if(len(runvalueswithoutrepeat[i][0]) > longestlength):
-        longestlength = len(runvalueswithoutrepeat[i][0])
-    if(len(str(runvalueswithoutrepeat[i][1])) > longestpblength):
-        longestpblength = len(str(runvalueswithoutrepeat[i][1]))
+try:
+    for i in range(5):
+        if(len(runvalueswithoutrepeat[i][0]) > longestlength):
+            longestlength = len(runvalueswithoutrepeat[i][0])
+        if(len(str(runvalueswithoutrepeat[i][1])) > longestpblength):
+            longestpblength = len(str(runvalueswithoutrepeat[i][1]))
 
-print("**Top PC players of the week** :man_running:\n```")
-for i in range(5):
-    print(str(i + 1) + ". " + str(runvalueswithoutrepeat[i][0]) + (" " * (longestlength - len(runvalueswithoutrepeat[i][0]) + 2 + longestpblength - len(str(runvalueswithoutrepeat[i][1])))) + str(runvalueswithoutrepeat[i][1]) + " PC")
-print("```")
+    print("**Top PC players of the week** :man_running:\n```")
+    for i in range(5):
+        print(str(i + 1) + ". " + str(runvalueswithoutrepeat[i][0]) + (" " * (longestlength - len(runvalueswithoutrepeat[i][0]) + 2 + longestpblength - len(str(runvalueswithoutrepeat[i][1])))) + str(runvalueswithoutrepeat[i][1]) + " PC")
+    print("```")
+except IndexError:
+    pass
+
+print("""**Top #pc-pics of the week** :eyes:
+This section is just for notes
+[pc-pic-collage-thanks-image-compositer.png]
+[MakeItHigher.png, then new post]
+""")
+
+print("**Top Chokes of the week** :sadge: ")
+chokes = [i.split("https://") for i in open("chokes.txt").read().splitlines()]
+for i in chokes:
+    print(i[0])
+    print("https://" + i[1])
+
+print()
+print("**PC Research** :test_tube: ")
+research = [i.split("https://") for i in open("research.txt").read().splitlines()]
+for i in research:
+    print(i[0])
+    print("https://" + i[1])
+
+print("")
+postscript = open("postscript.txt").read()
+print("**Postscript** :star:")
+print(postscript)
