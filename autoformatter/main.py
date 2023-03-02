@@ -124,7 +124,27 @@ for i in research:
     print(i[0])
     print("https://" + i[1])
 
-print("")
+print()
+print("**Trivia** :nerd:")
+print("This week’s trivia question: ")
+question = open("trivia.txt").read()
+print("```" + question + "```")
+print("Post your answers in #trivia-answers")
+
+print()
+print("**Joke** :laughing:")
+print("This week’s joke: ")
+joke = open("joke.txt").read()
+punchline = open("punchline.txt").read()[:-1]
+print("```" + joke + "```")
+print("||" + punchline + "||")
+
+print()
+print("**PC Tip of the Week** :brain:")
+tip = open("tip.txt").read()
+print("> " + tip)
+
+
 postscript = open("postscript.txt").read()
 print("**Postscript** :star:")
 print(postscript)
