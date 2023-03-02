@@ -118,7 +118,7 @@ for i in chokes:
     print("https://" + i[1])
 
 print()
-print("**PC Research** :test_tube: ")
+print("**Research** :test_tube: ")
 research = [i.split("https://") for i in open("research.txt").read().splitlines()]
 for i in research:
     print(i[0])
