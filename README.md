@@ -46,14 +46,4 @@ Run *gettopruns.py*
 
 ## imagecompositer.py
 
-Put this file in it's own folder
-
-Download *backgroundimage.py*
-
-Make a folder inside called *images*
-
-Put the 6 pc images in the *images* folder
-
-Change the *imagename* variable to whatever name you want the picture to be saved as
-
-Run *imagecompositer.py*
+deprecated; use sfinder man
